@@ -1,23 +1,23 @@
 /* ภารกิจที่ 2: จัดสไตล์ <body> */
 body {
-  /* พื้นหลังไล่สีพาสเทล ฟ้าอ่อน -> ชมพูอ่อน -> เขียวมิ้นต์อ่อน */
-  background: linear-gradient(135deg, #e0f2fe 0%, #fce7f3 50%, #dcfce7 100%);
+  /* พื้นหลังไล่สีโทนครีมอุ่น -> ชมพูตุ่น -> น้ำตาลนู้ดลาเต้ */
+  background: linear-gradient(135deg, #f3e8dd 0%, #e6c6c4 50%, #d4b8a8 100%);
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  color: #334155;
-  text-align: center; /* จัดข้อความใน header ให้อยู่กึ่งกลางรับกับการ์ด */
+  color: #5c4033; /* ตัวอักษรสีน้ำตาลช็อกโกแลตตุ่นๆ */
+  text-align: center;
   padding: 20px;
 }
 
 /* ภารกิจที่ 3: จัดสไตล์ .card */
 .card {
-  width: 300px;
-  background-color: rgba(255, 255, 255, 0.92); /* สีขาวอมครีมนิดๆ ดูละมุน */
-  border: 2px solid #fbcfe8; /* ขอบสีชมพูพาสเทล */
-  box-shadow: 0 8px 20px rgba(147, 197, 253, 0.35); /* เงาสีฟ้าพาสเทลฟุ้งๆ */
+  width: 310px;
+  background-color: #fbf7f2; /* พื้นการ์ดสีครีมนมอุ่นๆ */
+  border: 2.5px solid #c98a88; /* ขอบการ์ดสีชมพูกลีบกุหลาบตุ่น */
+  box-shadow: 0 10px 25px rgba(92, 64, 51, 0.18); /* เงาสีน้ำตาลเข้มฟุ้งๆ ให้การ์ดดูลอยเด่น */
   margin: 20px auto;
-  padding: 24px 20px;
-  border-radius: 20px; /* ปรับขอบให้มนขึ้นดูน่ารัก */
+  padding: 26px 22px;
+  border-radius: 24px;
 }
 
 /* ภารกิจที่ 4: จัดสไตล์รูปภาพ <img> */
@@ -28,25 +28,29 @@ body {
   border-radius: 50%;
   display: block;
   margin: 0 auto 15px;
-  border: 4px solid #bae6fd; /* กรอบรูปสีฟ้าพาสเทล */
-  background-color: #f0fdf4;
+  border: 4px solid #b5836d; /* กรอบรูปสีน้ำตาลคาราเมลตุ่น */
+  padding: 3px; /* เว้นขอบขาวด้านในนิดๆ ให้ดูเหมือนกรอบรูปน่ารักๆ */
+  background-color: #ffffff;
 }
 
 /* ภารกิจที่ 5: จัดสไตล์ชื่อ #profile-name */
 #profile-name {
-  color: #0369a1; /* สีฟ้าเข้มโทนละมุน อ่านง่าย */
+  color: #7c4d3e; /* สีน้ำตาลมอคค่าเข้ม ชัดเจนและละมุน */
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-/* ภารกิจที่ 6: จัดสไตล์ .bio */
+/* ภารกิจที่ 6: จัดสไตล์ .bio (ปรับช่องข้อความให้สวยน่ารัก มีมิติ) */
 .bio {
-  color: #166534; /* ตัวอักษรสีเขียวมัทฉะเข้ม */
-  background-color: #dcfce7; /* พื้นหลังกล่อง bio สีเขียวพาสเทล */
+  color: #5c4033; /* ตัวอักษรสีน้ำตาลเข้มอ่านง่าย */
+  background-color: #f3dedc; /* พื้นกล่องสีชมพูตุ่น */
+  border: 1.5px dashed #b87a78; /* เส้นขอบประสีชมพูเข้ม ให้ฟีลเหมือนสติกเกอร์/โน้ตน่ารักๆ */
+  box-shadow: 0 3px 8px rgba(184, 122, 120, 0.15); /* เงาเบาๆ ใต้กล่อง */
   font-size: 14px;
-  padding: 10px 12px;
-  border-radius: 12px;
-  line-height: 1.5;
+  padding: 12px 14px;
+  border-radius: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
 }
 
 /* ภารกิจที่ 7: จัดสไตล์ <ul> */
@@ -55,13 +59,27 @@ ul {
   padding-left: 0;
 }
 
-/* ตกแต่งรายการ <li> ด้านในให้เป็นป้ายสีชมพูพาสเทลน่ารักๆ */
+/* ตกแต่งรายการทักษะ <li> ด้านใน์การ์ดให้เป็นป้ายแท็กโทนน้ำตาล-ชมพูตุ่น */
 .card ul li {
-  background-color: #fce7f3;
-  color: #9d174d;
-  margin: 6px auto;
+  background-color: #a67b68; /* ป้ายสีน้ำตาลลาเต้ตุ่น */
+  color: #fffaf5; /* ตัวอักษรสีครีมอ่อน */
+  border: 1px solid #8c6250;
+  margin: 5px 3px;
   padding: 6px 14px;
-  border-radius: 15px;
-  font-size: 14px;
+  border-radius: 20px;
+  font-size: 13.5px;
   display: inline-block;
+  box-shadow: 0 2px 5px rgba(92, 64, 51, 0.15);
+}
+
+/* ตกแต่งรายการ <li> ตรงส่วน <header> ด้านบนให้เข้าชุดกันด้วย */
+header ul li {
+  background-color: rgba(251, 247, 242, 0.8);
+  border: 1px solid #c98a88;
+  color: #6e473b;
+  display: inline-block;
+  padding: 5px 12px;
+  margin: 4px;
+  border-radius: 14px;
+  font-size: 13.5px;
 }
