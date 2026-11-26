@@ -1,51 +1,51 @@
-* 1. พื้นหลังมีเลเยอร์: ชมพูพาสเทลสว่าง พร้อมลายจุดโรสพิงก์ */
+/* 1. พื้นหลังมีเลเยอร์: ไล่เฉดชมพู-ครีม-น้ำตาลนู้ด พร้อมลายจุดจางๆ */
 body {
-  background-color: #fce4ec;
+  background-color: #f9ecec;
   background-image: 
-    radial-gradient(#e8a2b8 1.5px, transparent 1.5px),
-    linear-gradient(135deg, #fff5f7 0%, #fad2de 50%, #f3bbc9 100%);
+    radial-gradient(#e3b7b7 1.2px, transparent 1.2px),
+    linear-gradient(135deg, #fdf6f0 0%, #f5d8d6 50%, #e5c3b5 100%);
   background-size: 24px 24px, 100% 100%;
   min-height: 100vh;
   font-family: 'Mali', Arial, sans-serif;
-  color: #4a2c26;
+  color: #5a3a31;
   text-align: center;
   padding: 35px 20px;
   margin: 0;
 }
 
-/* 2. ป้ายต้อนรับด้านบนสไตล์สติกเกอร์สีชมพูเข้มตัดขาว */
+/* 2. ป้ายต้อนรับด้านบนสไตล์สติกเกอร์ */
 .badge {
-  background: linear-gradient(to right, #e57a96, #f095ad);
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  background: linear-gradient(to right, #fffaf6, #fce8e6);
+  border: 2px solid #dfa3a0;
+  color: #8c5246;
   padding: 6px 18px;
   border-radius: 50px;
   font-size: 13px;
   font-weight: 700;
   display: inline-block;
   margin-bottom: 10px;
-  box-shadow: 0 4px 10px rgba(229, 122, 150, 0.3);
+  box-shadow: 0 4px 10px rgba(166, 110, 104, 0.15);
 }
 
 header h1 {
   margin: 6px 0;
-  color: #4a2c26;
+  color: #6b3e33;
   font-size: 28px;
   text-shadow: 2px 2px 0px #ffffff;
 }
 
 .subtitle {
   margin: 4px 0 16px;
-  color: #6e453c;
+  color: #85584c;
   font-size: 15px;
 }
 
-/* 3. ป้ายข้อมูลชื่อเล่น & สิ่งที่กำลังเรียน (สีครีมขอบชมพูโรสเข้ม) */
+/* 3. ป้ายข้อมูลชื่อเล่น & สิ่งที่กำลังเรียน (มีเลเยอร์ขอบซ้อน) */
 .info-pills span {
-  background-color: #fffdf9;
-  border: 1.5px solid #d97b93;
-  box-shadow: 0 3px 0px #d97b93, 0 5px 12px rgba(74, 44, 38, 0.1);
-  color: #4a2c26;
+  background-color: #fffcf9;
+  border: 1.5px solid #d99b98;
+  box-shadow: 0 3px 0px #d99b98, 0 5px 12px rgba(90, 58, 49, 0.1);
+  color: #6b3e33;
   display: inline-block;
   padding: 6px 16px;
   margin: 5px;
@@ -53,15 +53,15 @@ header h1 {
   font-size: 13.5px;
 }
 
-/* 4. การ์ดโปรไฟล์หลักสีครีมงาช้างสว่าง (ตัดกับพื้นหลังชมพูเด่นชัด) */
+/* 4. การ์ดโปรไฟล์หลัก (ซ้อนเลเยอร์ขอบและเงาให้นูนละมุน) */
 .card {
   width: 320px;
-  background: linear-gradient(180deg, #ffffff 0%, #fcf6ef 100%);
-  border: 3px solid #d97b93;
-  outline: 4px solid rgba(255, 255, 255, 0.85);
+  background: linear-gradient(180deg, #fffdfb 0%, #fcf4ee 100%);
+  border: 3px solid #e0a6a3;
+  outline: 4px solid rgba(255, 255, 255, 0.7);
   box-shadow: 
-    0 14px 30px rgba(122, 62, 77, 0.18),
-    inset 0 0 18px rgba(250, 210, 222, 0.35);
+    0 12px 28px rgba(115, 73, 62, 0.18),
+    inset 0 0 15px rgba(245, 216, 214, 0.4);
   margin: 28px auto;
   padding: 30px 24px;
   border-radius: 30px;
@@ -72,14 +72,14 @@ header h1 {
   transform: translateY(-5px);
 }
 
-/* 5. กรอบรูปโปรไฟล์แบบวงแหวน 2 ชั้น (ช็อกโกแลตตัดชมพู) */
+/* 5. กรอบรูปโปรไฟล์แบบวงแหวน 2 ชั้น */
 .avatar-wrapper {
   display: inline-block;
   padding: 5px;
-  background: linear-gradient(135deg, #e57a96, #8c5848);
+  background: linear-gradient(135deg, #f3c6c4, #b8846f);
   border-radius: 50%;
   margin-bottom: 14px;
-  box-shadow: 0 6px 15px rgba(140, 88, 72, 0.25);
+  box-shadow: 0 6px 15px rgba(140, 82, 70, 0.2);
 }
 
 .card img {
@@ -92,19 +92,19 @@ header h1 {
   background-color: #fff8f5;
 }
 
-/* 6. ชื่อโปรไฟล์สีน้ำตาลโกโก้เข้มคมชัด */
+/* 6. ชื่อโปรไฟล์ */
 #profile-name {
-  color: #4a2c26;
+  color: #6b3e33;
   font-size: 22px;
   margin: 4px 0 12px;
 }
 
-/* 7. กล่องข้อความ Bio สไตล์โน้ตชมพูพาสเทลตัดกับการ์ดสีครีม */
+/* 7. กล่องข้อความ Bio สไตล์โน้ตพาสเทลน่ารัก */
 .bio {
-  color: #592e36;
-  background: linear-gradient(to right, #fde4ec, #fbf0e8);
-  border: 1.5px dashed #d97b93;
-  box-shadow: 0 4px 10px rgba(217, 123, 147, 0.15);
+  color: #633d33;
+  background: linear-gradient(to right, #fae6e4, #f7ece4);
+  border: 1.5px dashed #cf8c89;
+  box-shadow: 0 4px 10px rgba(207, 140, 137, 0.15);
   font-size: 13.5px;
   padding: 12px 14px;
   border-radius: 18px;
@@ -115,17 +115,17 @@ header h1 {
 /* 8. เส้นคั่นกลางการ์ด */
 .divider {
   border: none;
-  border-top: 2px dotted #e39eb0;
+  border-top: 2px dotted #dfb0ad;
   margin: 18px 0;
 }
 
 .card h3 {
-  color: #6e453c;
+  color: #7d4b3e;
   font-size: 16px;
   margin-bottom: 12px;
 }
 
-/* 9. ป้ายแท็กทักษะแบบปุ่มนูน 3D สีน้ำตาลโกโก้ตัดชมพู */
+/* 9. ป้ายแท็กทักษะแบบปุ่มนูน 3D น่ารักๆ */
 ul.skills-list {
   list-style-type: none;
   padding-left: 0;
@@ -133,21 +133,21 @@ ul.skills-list {
 }
 
 .card ul li {
-  background: linear-gradient(180deg, #9e6552 0%, #824e3d 100%);
-  color: #ffffff;
-  border: 1px solid #6b3d2e;
-  box-shadow: 0 3px 0px #542d20, 0 4px 8px rgba(74, 44, 38, 0.18);
+  background: linear-gradient(180deg, #c28b78 0%, #a8715e 100%);
+  color: #fffcf9;
+  border: 1px solid #96604e;
+  box-shadow: 0 3px 0px #825040, 0 4px 8px rgba(90, 58, 49, 0.15);
   margin: 6px 4px;
   padding: 7px 15px;
   border-radius: 50px;
   font-size: 13px;
   display: inline-block;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .card ul li:hover {
   transform: scale(1.06);
-  background: linear-gradient(180deg, #e57a96 0%, #cf5d7b 100%);
-  border-color: #b54764;
-  box-shadow: 0 3px 0px #94334d;
+  background: linear-gradient(180deg, #d69390 0%, #bf7a77 100%);
+  border-color: #a86461;
+  box-shadow: 0 3px 0px #91524f;
 }
